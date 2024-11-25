@@ -1,0 +1,69 @@
+/* Container for the player list */
+.player-list-container {
+    overflow-y: auto;
+    height: 300px; /* Adjust as needed */
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Draggable player items */
+.player-item {
+    padding: 10px;
+    cursor: grab;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+    transition: background-color 0.3s;
+}
+
+.player-item:hover {
+    background-color: #e9e9e9;
+}
+
+/* Style for player comparison placeholders */
+.player-compare-placeholder {
+    width: 45%; /* Adjust as needed */
+    min-height: 150px;
+    border: 2px dashed #aaa;
+    margin: 10px;
+    position: relative;
+    display: inline-block; /* To display side by side */
+    vertical-align: top;
+}
+
+/* Style when dragging over the placeholder */
+.player-compare-placeholder.drag-over {
+    border-style: solid;
+    background-color: #f0f0f0;
+}
+
+/* Common style for content in placeholders */
+.player-compare-placeholder h3,
+.player-compare-placeholder p {
+    padding: 10px;
+    margin: 0;
+}
+
+/* Placeholder before any player data is dropped */
+.player-compare-placeholder:empty::after {
+    content: 'Drag player here';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #aaa;
+}
+
+/* Style for the compare player button */
+.compare-player-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.compare-player-button:hover {
+    background-color: #0056b3;
+}

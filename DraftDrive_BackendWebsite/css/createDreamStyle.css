@@ -1,0 +1,61 @@
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#teamSelect {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.player-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.player-card {
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer; /* If draggable */
+    /* Add more styles as needed */
+}
+
+#playerCards {
+    overflow-y: auto; /* Makes the div scrollable */
+    max-height: 300px; /* Adjust as per your design requirements */
+    /* Add other styles like padding, margin, border, etc., as needed */
+}
+
+.player-card {
+    /* Add styles for your player cards, e.g., padding, margin, display, etc. */
+    cursor: grab; /* Indicates the card is draggable */
+}
+
+.dream-team {
+    margin-top: 20px;
+    border: 2px dashed #ccc;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.position {
+   
+    width:19%;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 8px;
+}
